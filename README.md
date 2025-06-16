@@ -2,6 +2,7 @@
 Hi all, welcome to my daily learnings of basic concepts of HTML.   
 
 Day 1 (Monday, 16-06-2025)  
+<pre>
      =>html is NOT case sensitive.    
      =>learnt about basics of html.  
      =>Before writing html code, mention '!DOCTYPE html' to declare document type.  
@@ -10,5 +11,5 @@ Day 1 (Monday, 16-06-2025)
      =>All html elements can have attributes to provide additional information about elements.  
      => src attribute in 'img' have 2 types of url, absolute and relative.   
      =>'pre' tage is used for writing pre formatted text.  
-
+</pre>
 
