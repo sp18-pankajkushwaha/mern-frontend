@@ -2,7 +2,7 @@
 Hi all, welcome to my daily learnings of basic concepts of HTML.   
 
 Day 1 (Monday, 16-06-2025)  
-<pre>
+
      => HTML is NOT case sensitive.    
      => learnt about basics of html.  
      => Before writing html code, mention `<!DOCTYPE html>` to declare document type.  
@@ -13,13 +13,10 @@ Day 1 (Monday, 16-06-2025)
      => `<pre>` tag is used for writing pre formatted text.  
 
 References: https://www.w3schools.com/html/default.asp 
-</pre>
+
 
 Day 2 (Tuesday, 17-06-2025)
-<pre>
 
-
-</pre>
 
 
 
