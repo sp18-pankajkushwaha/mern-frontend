@@ -17,6 +17,15 @@ References: https://www.w3schools.com/html/default.asp
 
 Day 2 (Tuesday, 17-06-2025)
 
+     =>Learnt about inline and block elements. 
+     =>Block elements use 100% of width and margins and paddings can be adjusted.
+     =>Inline elements use only required width and overrule margins and paddings.
+     =>We can insert inline element inside block element but cannot insert block element inside inline element.
+     =>iframe is used to insert a webpage inside existing webpage.
+     =><video> & <audio> tags are used to insert media in webpage.
+     =>Youtube videos can be played inside iframe using yt url + video id as src.
+     =>Can turn on features like autoplay & mute by adding "?autoplay=1&mute=1" in url.
+
 
 
 
