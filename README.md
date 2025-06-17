@@ -26,6 +26,8 @@ Day 2 (Tuesday, 17-06-2025)
      =>Youtube videos can be played inside iframe using yt url + video id as src.
      =>Can turn on features like autoplay & mute by adding "?autoplay=1&mute=1" in url.
 
+References: https://www.w3schools.com/html/default.asp
+
 
 
 
