@@ -37,5 +37,6 @@ Day 3 (Wednesday, 18-06-2025)
      =>plug-in can be achieved using `<object>`, `<embed>`.
      =>Learnt about table and `<rowspan>` to merge 2 or more rows.
      =>Learnt about `<colspan>` to merge 2 or more column.
+     =>Use `table-layout:fixed` to see visible rowspan and colspan.
 
 References: https://www.w3schools.com/html/default.asp
