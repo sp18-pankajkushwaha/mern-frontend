@@ -38,4 +38,4 @@ Day 3 (Wednesday, 18-06-2025)
      =>Learnt about table and `<rowspan>` to merge 2 or more rows.
      =>Learnt about `<colspan>` to merge 2 or more column.
 
-
+References: https://www.w3schools.com/html/default.asp
