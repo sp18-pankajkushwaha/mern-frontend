@@ -35,6 +35,7 @@ Day 3 (Wednesday, 18-06-2025)
      =>display:grid is used to display cards in a grid format. `grid-template-columns:33% 33% 33%` is used to specify space.
      =>plug-in feature is used to extend functionality like- virus scan, map, verification.
      =>plug-in can be achieved using `<object>`, `<embed>`.
-     =>
+     =>Learnt about table and `<rowspan>` to merge 2 or more rows.
+     =>Learnt about `<colspan>` to merge 2 or more column.
 
 
