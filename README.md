@@ -28,6 +28,11 @@ Day 2 (Tuesday, 17-06-2025)
 
 References: https://www.w3schools.com/html/default.asp
 
+Day 3 (Wednesday, 18-06-2025)
 
+     =>Block element can be displayed horizontally instead of vertically using float:left, inline-block and flex.  
+     =>Use margin:auto to center align `<div>` content.
+     =>display:grid is used to display cards in a grid format. `grid-template-columns:33% 33% 33%` is used to specify space.
+     =>
 
 
