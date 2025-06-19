@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/id/1151953280/vector/passport-icon-on-white-background.jpg?s=1024x1024&w=is&k=20&c=if6MUSGn0AQxM976rQoEUYaeMNuRd7ckVotF_2WzXzs=">
+    <style>
+         .submit {
+      background-color: rgb(60, 60, 84);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .submit:hover {
+      background-color: rgb(78, 190, 78); /* Color on hover */
+    }
+  
+   
+    </style>
+</head>
+<body>
+    <h1>Welcome to Passport application portal</h1>
+    <h2>Please enter following details correctly to continue...</h2>
+    <form autocomplete="on" action="submit.html" method="get" target="_blank"    oninput="x.value=parseFloat(yoe.value)">
+        <div>
+            <fieldset>
+                <legend>Basic details</legend>
+                <span>
+                <label for="fname"> First Name <sup>*</sup></label>
+                <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+                </span>
+                <span>
+                    <label for="mname">Middle Name: </label>
+                    <input type="text" placeholder="Enter middle name" id="mname" name="mname">
+                </span>
+                <span>
+                    <label for="lname">Last Name:<sup>*</sup> </label>
+                    <input type="text" required id="lname" name="lname" placeholder="Enter last name" required> 
+                </span>
+                <div>
+                    <br>
+                    <label for="pnum">Mobile: <sup>*</sup></label>
+                    <input type="text" name="pnum" id="pnum" pattern="[7-9]{1}[0-9]{9}" required placeholder="10 digit">
+                    <label for="email">Email:<sup>*</sup> </label>
+                    <input type="email" id="email" name="email" required placeholder="john@email.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="dob">Date of birth: <sup>*</sup></label>
+                    <input type="date" id="dob" name="dob" min="01-01-2007" required>
+                </div>
+                <div>
+                <label for="address">Address:<sup>*</sup></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="pin">Pin<sup>*</sup>:</label>
+                <input type="text" minlength="6" maxlength="6" pattern="[0-6]" id="pin" name="pin" required placeholder="6 digit"><br>
+                <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter complete address" required></textarea> 
+                </div>
+                
+                
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    Educational Qualifications
+                </legend>
+                <div>
+                  <label for="college">Enter College name:<sup>*</sup></label>
+                  <select id="college" name="college" required >
+                    <option value="Jaypee">Jaypee Institute</option>
+                    <option value="IITB">IIT Delhi</option>
+                    <option value=" VIT">Vellore Institute</option>
+                    <option value="GG">Galgotia</option>
+                    <option value="Am">Amity</option>
+                    <option value="IIITD">IIIT Delhi</option>
+                    <option value="LPU">Lovelo professional</option>
+                    <option value="BBD">BBD Institute</option>
+                  </select>
+                </div>
+                <div>
+                  Degree: <sup>*</sup>
+                  <br>
+                  <input type="radio" id="btech" name="degree" value="Btech.">
+                  <label for="btech">Btech.</label><br>
+                  <input type="radio" id="bsc" name="degree" value="bsc">
+                  <label for="bsc">BSC</label><br>
+                  <input type="radio" id="mtech" name="degree" value="mtech">
+                  <label for="mtech">Mtech.</label>
+                </div>
+                Select preferred locations (more than 1):
+                <input type="checkbox" id="lko" name="loc" value="lko">
+                <label for="lko">Lucknow</label>
+                <input type="checkbox" id="knp" name="loc" value="knp">
+                <label for="knp"> Kanpur</label>
+                <input type="checkbox" id="del" name="loc" value="del">
+                <label for="del"> Delhi</label>
+                <div>
+                    <br>
+                    <label for="senior">Upload senior year marksheet:<sup>*</sup> <small>(.pdf only)</small></label>
+                    <input type="file" name="senior" accept="application/pdf" required>
+                </div>
+                <div>
+                    <br>
+                    <label for="photo">Upload your photo <sup>*</sup><small>(.jpeg, .mpeg only)</small></label>
+                    <input type="file" name="photo" accept="image/jpeg, image/mpeg, image/jpg" required>
+                </div>
+                <div>
+                    <br>
+                    <label for="vol">Years of experience. (between 0 to 5):</label>
+                    <input type="range" id="yoe" name="yoe" min="0" max="5" value="2.5">
+                    <output name="x" id="x" for="yoe">2.5</output>
+                </div>
+                <div>
+                    <br>
+                    <input type="button" value="Save" onclick="alert('Saved!')">
+                </div>
+            </fieldset>
+        </div>
+        <br>
+        <input type="submit" value="Submit" class="submit" onclick="alert('Submitted!')">
+        <input type="reset" value=" reset">
+    </form>
+</body>
+</html>

@@ -40,3 +40,15 @@ Day 3 (Wednesday, 18-06-2025)
      =>Use `table-layout:fixed` to see visible rowspan and colspan.
 
 References: https://www.w3schools.com/html/default.asp
+
+Day 4 (Thursday, 19-06-2025)
+
+     =>`<form>` is used to create html forms.
+     =>`<label>` is used to increase accessibility for screen readers and toggles to input when clicked on.
+     =>'<input>' is used to define input. It can be of type= text, checkbox, radio, button, submit.
+     =>`Name' attribute is a MUST with `<input>' to submit values.
+     =>`<select>` is used for drop-down with attributes id and name, attribute size and multiple is used to select more than one option.
+     =>`<option value="xyz"> xyd </option>` is used to define option values.
+     =>`<text area rows='10' cols='10'></textarea>' is used to define multiple line input.
+     =>`<feildset>` is used to group related data into the form & `<legend>` is used to caption that related data.
+     =>`<datalist>` is used to pre define the options for input tag.
