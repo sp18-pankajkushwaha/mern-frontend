@@ -52,3 +52,12 @@ Day 4 (Thursday, 19-06-2025)
      =>`<text area rows='10' cols='10'></textarea>' is used to define multiple line input.
      =>`<feildset>` is used to group related data into the form & `<legend>` is used to caption that related data.
      =>`<datalist>` is used to pre define the options for input tag.
+
+References: https://www.w3schools.com/html/default.asp
+
+Day 5 (Friday, 20-06-2025)
+
+     => If both external and internal css is defned, the value of last read css will be used.
+     => Inline css has the highest priority.
+     => In RGBA , A has value from 0 (fully transparent) to 1 (Not transparent at all).
+     =>
