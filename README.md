@@ -60,4 +60,11 @@ Day 5 (Friday, 20-06-2025)
      => If both external and internal css is defned, the value of last read css will be used.
      => Inline css has the highest priority.
      => In RGBA , A has value from 0 (fully transparent) to 1 (Not transparent at all).
-     => Learnt about CSS properties.
+     => Learnt about CSS properties. Display : Flex, Justify-content to align horizontally wrt. flex direction.
+     => Align items is used to align vertically wrt. flex direction.
+     => Use border, margins, paddings to make container more appealing.
+     => Learnt about basic git commands. First initialise the repo. git checkout -b testbrance for a new branch.
+     => git push, pull, merge are some basic day to day commands. NEVER use (git .add) because it may add the codes you don't want to push.
+     
+References: https://www.w3schools.com/html/default.asp
+
