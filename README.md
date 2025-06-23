@@ -68,3 +68,7 @@ Day 5 (Friday, 20-06-2025)
      
 References: https://www.w3schools.com/html/default.asp
 
+Day 6 (Monday, 23-06-2025)
+
+     => Javascript is a web-language
+
