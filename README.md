@@ -60,4 +60,4 @@ Day 5 (Friday, 20-06-2025)
      => If both external and internal css is defned, the value of last read css will be used.
      => Inline css has the highest priority.
      => In RGBA , A has value from 0 (fully transparent) to 1 (Not transparent at all).
-     =>
+     => Learnt about CSS properties.
