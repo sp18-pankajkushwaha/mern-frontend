@@ -76,4 +76,12 @@ Day 6 (Monday, 23-06-2025)
      => Let: Can be re-asssigned, Can't be re-declared, Can't bind this, has block scope.
      => Const: Can't be re-assigned, re-declared, bind this, has block scope.
      => var supporst hoisting but let and const does not.
+     => There are 8 primitive datatypes in javascript- String, boolean, number, bigint, null, undefined, symbol, object.
 
+References: https://www.w3schools.com/html/default.asp
+            https://www.youtube.com/watch?v=Icev9Oxf0WA
+
+Day 7 (Tuesday, 24-06-2025)
+
+     => Javascript works from left-to-right. Meaning 6+5+"hello" will result into 11hello.
+        But, "hello"+6+5 will result into hello65.
