@@ -70,5 +70,10 @@ References: https://www.w3schools.com/html/default.asp
 
 Day 6 (Monday, 23-06-2025)
 
-     => Javascript is a web-language
+     => Javascript is a web-language.
+     => Variables can be declared using var, let and const in javascript.
+     => Var: Can be re-declared, re-assigned, bind this, has global scope.
+     => Let: Can be re-asssigned, Can't be re-declared, Can't bind this, has block scope.
+     => Const: Can't be re-assigned, re-declared, bind this, has block scope.
+     => var supporst hoisting but let and const does not.
 
