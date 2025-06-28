@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ehya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/x-icon" href="./assets/Logo (1).svg">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const grid = document.querySelector('.card-gridd');
+
+            function getCardWidth() {
+                const card = grid?.querySelector('.fest-card');
+                return card ? card.getBoundingClientRect().width + 16 : 340;
+            }
+
+            window.scrollLeftt = function () {
+                if (grid) {
+                    grid.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+                }
+            };
+
+            window.scrollRight = function () {
+                if (grid) {
+                    grid.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+                }
+            };
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const grid = document.querySelector('.products-scroll-tab');
+
+            function getProductCardWidth() {
+                const card = grid?.querySelector('.product');
+                return card ? card.getBoundingClientRect().width + 16 : 340;
+            }
+
+            window.scrollToLeft = function () {
+                if (grid) {
+                    grid.scrollBy({ left: -getProductCardWidth(), behavior: 'smooth' });
+                }
+            };
+
+            window.scrollToRight = function () {
+                if (grid) {
+                    grid.scrollBy({ left: getProductCardWidth(), behavior: 'smooth' });
+                }
+            };
+        });
+
+        function playVideo(element, videoUrl) {
+            element.innerHTML = `
+            <iframe width="100%" height="100%" 
+                src="${videoUrl}?autoplay=1&rel=0" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+        `;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <header>
+                <div class="container">
+                    <div class="navbar">
+                        <div class="mainlogo"><img src="./assets/Logo (2).svg" alt="logo"></div>
+
+                        <!-- Hidden checkbox to toggle menu -->
+                        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                        <label for="menu-toggle" class="menu-icon">
+                            <img src="./assets/ic_Menu.svg" alt="menu" />
+                        </label>
+
+                        <div class="nav">
+                            <ul class="nav-links">
+                                <li>Home</li>
+                                <li>Landings <span><img src="./assets/angle-down (1).svg" alt="angle"></span> </li>
+                                <li>Pages <span> <img src="./assets/angle-down (1).svg" alt="angle"></span></li>
+                                <li>Docs</li>
+                                <li>Help</li>
+                            </ul>
+                            <button class="getit">Get it now</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="container">
+        <section class="herosection">
+
+            <div class="box">
+                <div class="headings">
+                    Singer, Writer and  Music Arranger
+                </div>
+                <div class="intro">
+                    <p class="subintro">Welcome to my artist page. This is my perosnal site. My name is Mandy
+                        Flores, I am a Musician and Music Arranger. </p>
+                </div>
+            </div>
+            <div class="logos">
+                <img src="./assets/SocialMedia.svg" alt="social-icons">
+            </div>
+
+        </section>
+        </div>
+
+        <div class="imagesection">
+            <img src="./assets/Image.png" alt="people-image">
+        </div>
+
+        <div class="container">
+        <section class="biosection">
+            <p class="bio">"Mandy Flores is an American Jazz singer, He's also writer and music arranger for some other
+                singer. He widely known as Mandy. Starts with singing his favorite Jazz song with Piano when he was only
+                8 years old. His unique voice subtly merged the color, character and unique singing technique from his
+                father that also Jazz singer too."</p>
+            <div class="line">
+                <img src="./assets/Line.svg" alt="line">
+            </div>
+        </section>
+        </div>
+
+        <div class="container">
+        <section class="cardd">
+            <div class="concerts">
+                <div class="concertHeading">Upcoming Concert</div>
+                <div class="schedule">My Concert schedule in the near future.</div>
+                <div class="arrow">
+                    <img src="./assets/Button.svg" alt="left button">
+                    <img src="./assets/Icon.svg" alt="right button">
+                </div>
+            </div>
+            <div class="card-gridd">
+                <div class="fest-card">
+                    <img src="./assets/Shape.png" alt="Lock'n Festival">
+                    <div class="date-tag">16 FEB - 2020</div>
+                    <h2>Lock'n Festival</h2>
+                    <p>Toronto, Canada</p>
+                    <button class="buy-btn">Buy Ticket</button>
+                </div>
+
+                <div class="fest-card">
+                    <img src="./assets/Shape (1).png" alt="Colonial Concert">
+                    <div class="date-tag">20 FEB - 2020</div>
+                    <h2>Colonial Concert</h2>
+                    <p>Miami, America</p>
+                    <button class="buy-btn">Buy Ticket</button>
+                </div>
+
+                <div class="fest-card">
+                    <img src="./assets/Shape (2).png" alt="Synchronize Fest">
+                    <div class="date-tag">21 FEB - 2020</div>
+                    <h2>Synchronize Fest</h2>
+                    <p>Jakarta, Indonesia</p>
+                    <button class="sold-out">
+                        <p class="sold">Sold Out</p>
+                    </button>
+                </div>
+
+                <div class="fest-card">
+                    <img src="./assets/Shape (3).png" alt="Jazzy Nite Special">
+                    <div class="date-tag">25 FEB - 2020</div>
+                    <h2>Jazzy Nite Special</h2>
+                    <p>Orlando, America</p>
+                    <button class="buy-btn">Buy Ticket</button>
+                </div>
+
+                <div class="fest-card">
+                    <img src="./assets/Shape (4).png" alt="Mountain Jazz Fest">
+                    <div class="date-tag">02 MAR - 2020</div>
+                    <h2>Mountain Jazz Fest</h2>
+                    <p>Malang, Indonesia</p>
+                    <button class="sold-out">
+                        <p class="sold">Sold Out</p>
+                    </button>
+                </div>
+
+                <div class="fest-card">
+                    <img src="./assets/Shape (5).png" alt="Solo City Jazz">
+                    <div class="date-tag">05 MAR - 2020</div>
+                    <h2>Solo City Jazz</h2>
+                    <p>Solo, Indonesia</p>
+                    <button class="buy-btn">Buy Ticket</button>
+                </div>
+
+            </div>
+            <div class="scroll-button">
+                <button onclick="scrollLeftt()" style="rotate: 180deg;"><img src="./assets/Button (4).svg"
+                        alt="left button"></button>
+                <button onclick="scrollRight()"><img src="./assets/Button (4).svg" alt="right button"></button>
+            </div>
+            <div class="line">
+                <img src="./assets/Line.svg" alt="line">
+            </div>
+        </section>
+        </div>
+
+        <div class="container">
+        <section class="videos-section">
+            <h2>Newest Music Videos</h2>
+            <p>My newest MV from latest Album "World"</p>
+
+            <div class="videos-grid">
+                <div class="video-card wide"
+                    onclick="playVideo(this, 'https://www.youtube.com/embed/Zz7os_kWwnM?autoplay=1&mute=1')">
+                    <img src="./assets/Item.png" alt="Bad Horse">
+                </div>
+                <div class="video-card"
+                    onclick="playVideo(this, 'https://www.youtube.com/embed/Zz7os_kWwnM?autoplay=1&mute=1')">
+                    <img src="./assets/Item (1).png" alt="Old Man">
+                </div>
+                <div class="video-card"
+                    onclick="playVideo(this, 'https://www.youtube.com/embed/Zz7os_kWwnM?autoplay=1&mute=1')">
+                    <img src="./assets/Item (2).png" alt="Young Blood">
+                </div>
+                <div class="video-card wide"
+                    onclick="playVideo(this, 'https://www.youtube.com/embed/Zz7os_kWwnM?autoplay=1&mute=1')">
+                    <img src="./assets/Item (3).png" alt="Love Your Earth">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="youtube"> <img src="./assets/Text.svg" alt="youtube"> </span></button>
+                <button class="spotify"><img src="./assets/Text (1).svg" alt="spotify"> </button>
+            </div>
+            <div class="line">
+                <img src="./assets/Line.svg" alt="line">
+            </div>
+        </section>
+        </div>
+
+        <div class="container">
+        <section class="merch-section">
+            <div class="text-area">
+                <h2>My Store<br>Merchandise</h2>
+                <p>This is my curated collection for you.<br>
+                    You can buy by click product or you<br>
+                    click open the store page. Thank you :)</p>
+                <div class="nav-buttons">
+                    <img src="./assets/Button (1).svg" alt="left">
+                    <img src="./assets/Button (2).svg" alt="right">
+                </div>
+            </div>
+
+            <div class="products-scroll">
+                <div class="product">
+                    <img src="./assets/Item (4).png" alt="Shirt 1">
+                </div>
+                <div class="product">
+                    <img src="./assets/Item (5).png" alt="Shirt 2">
+                </div>
+                <div class="product">
+                    <img src="./assets/Item (6).png" alt="Shirt 3">
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <div class="container">
+        <section class="merch-section-tab">
+            <div class="text-area-tab">
+                <h2>My Store Merchandise</h2>
+                <p>This is my curated collection for you.
+                    You can buy by click  product or you
+                    click open the store page. Thank you :)</p>
+            </div>
+
+            <div class="products-scroll-tab">
+                <div class="product">
+                    <img src="./assets/Item (4).png" alt="Shirt 1">
+                </div>
+                <div class="product">
+                    <img src="./assets/Item (5).png" alt="Shirt 2">
+                </div>
+                <div class="product">
+                    <img src="./assets/Item (4).png" alt="Shirt 3">
+                </div>
+            </div>
+            <div class="nav-buttons-bottom-tab">
+                <button onclick="scrollToLeft()"><img src="./assets/Button (1).svg" alt="left"></button>
+                <button onclick="scrollToRight()"> <img src="./assets/Button (2).svg" alt="right"></button>
+            </div>
+        </section>
+        </div>
+
+
+        <div class="container">
+        <section class="social-section">
+            <h2>Follow My Social Media</h2>
+
+            <div class="filter-buttons">
+                <button class="active">All</button>
+                <button>Facebook</button>
+                <button>Twitter</button>
+                <button>Youtube</button>
+                <button>Instagram</button>
+            </div>
+
+            <div class="card-grid">
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="./assets/Photo (6).png" alt="Avatar">
+                            <span>Mandy Flores</span>
+                        </div>
+                        <span class="time">3d ago</span>
+                    </div>
+                    <img class="post-img" src="./assets/Photo.png" alt="Post Image">
+                    <p>Only 3 releases in 2019 and still blessed with these numbers this year! Thank you to everyone who
+                        kept listening @spotify</p>
+                    <div class="post-footer">
+                        <span><img src="./assets/Action.svg" alt="like">
+                            <img src="./assets/Action (1).svg" alt="comment"> </span>
+                        <span class="icon fb"> <img src="./assets/facebook.svg" alt="fb-icon"></span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="./assets/Photo (6).png" alt="Avatar">
+                            <span>Mandy_music</span>
+                        </div>
+                        <span class="time">3d ago</span>
+                    </div>
+                    <img class="post-img" src="./assets/Photo (1).png" alt="Post Image">
+                    <p>Only 3 releases in 2019 and still blessed with these numbers this year! Thank you to everyone who
+                        kept listening @spotify</p>
+                    <div class="post-footer">
+                        <span><img src="./assets/Action.svg" alt="like">
+                            <img src="./assets/Action (1).svg" alt="comment"> </span>
+                        <span class="icon fb"> <img src="./assets/instagram.svg" alt="insta-icon"></span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="./assets/Photo (6).png" alt="Avatar">
+                            <span>@MandyMF</span>
+                        </div>
+                        <span class="time">3d ago</span>
+                    </div>
+                    <img class="post-img" src="./assets/Photo (2).png" alt="Post Image">
+                    <p>Only 3 releases in 2019 and still blessed with these numbers this year! Thank you to everyone who
+                        kept listening @spotify</p>
+                    <div class="post-footer">
+                        <span><img src="./assets/Action.svg" alt="like">
+                            <img src="./assets/Action (1).svg" alt="comment"> </span>
+                        <span class="icon fb"> <img src="./assets/twitter (1).svg" alt="twitter-icon"></span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="./assets/Photo (6).png" alt="Avatar">
+                            <span>@MandyMF</span>
+                        </div>
+                        <span class="time">3d ago</span>
+                    </div>
+                    <img class="post-img" src="./assets/Photo (3).png" alt="Post Image">
+                    <p>Only 3 releases in 2019 and still blessed with these numbers this year! Thank you to everyone who
+                        kept listening @spotify</p>
+                    <div class="post-footer">
+                        <span><img src="./assets/Action.svg" alt="like">
+                            <img src="./assets/Action (1).svg" alt="comment"> </span>
+                        <span class="icon fb"> <img src="./assets/twitter (1).svg" alt="twitter-icon"></span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="./assets/Photo (6).png" alt="Avatar">
+                            <span>Mandy Music</span>
+                        </div>
+                        <span class="time">3d ago</span>
+                    </div>
+                    <img class="post-img" src="./assets/Photo (4).png" alt="Post Image">
+                    <p>Only 3 releases in 2019 and still blessed with these numbers this year! Thank you to everyone who
+                        kept listening @spotify</p>
+                    <div class="post-footer">
+                        <span><img src="./assets/Action.svg" alt="like">
+                            <img src="./assets/Action (1).svg" alt="comment"> </span>
+                        <span class="icon fb"> <img src="./assets/youtube.svg" alt="yt-icon"></span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="./assets/Photo (6).png" alt="Avatar">
+                            <span>Mandy_music</span>
+                        </div>
+                        <span class="time">3d ago</span>
+                    </div>
+                    <img class="post-img" src="./assets/Photo (5).png" alt="Post Image">
+                    <p>Only 3 releases in 2019 and still blessed with these numbers this year! Thank you to everyone who
+                        kept listening @spotify</p>
+                    <div class="post-footer">
+                        <span><img src="./assets/Action.svg" alt="like">
+                            <img src="./assets/Action (1).svg" alt="comment"> </span>
+                        <span class="icon fb"> <img src="./assets/instagram.svg" alt="insta-icon"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span><img src="./assets/Logo (1).svg" alt="logo"> </span>
+                    <p>Build a modern and creative<br>website with crealand</p>
+                    <div class="social-icons">
+                        <span> <img src="./assets/google.svg" alt="google-icon"> </span>
+                        <span> <img src="./assets/twitter (2).svg" alt="twitter-icon"></span>
+                        <span> <img src="./assets/instagram (1).svg" alt="insta-icon"></span>
+                        <span> <img src="./assets/linkedin.svg" alt="linkedin-icon"></span>
+                        <span> <img src="./assets/youtube (1).svg" alt="yt-icon"></span>
+                    </div>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li>Landingpage</li>
+                            <li>Features</li>
+                            <li>Documentation</li>
+                            <li>Referral Program</li>
+                            <li>Pricing</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Documentation</li>
+                            <li>Design</li>
+                            <li>Themes</li>
+                            <li>Illustrations</li>
+                            <li>UI Kit</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About</li>
+                            <li>Terms</li>
+                            <li>Privacy Policy</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>More</h4>
+                        <ul>
+                            <li>Documentation</li>
+                            <li>License</li>
+                            <li>Changelog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="heart"><img src="./assets/Heart.svg" alt="heart-icon"> </div>
+                <p>Copyright © 2019. Crafted with love.</p>
+            </div>
+        
+        </div>
+    </div>
+</body>
+
+</html>
