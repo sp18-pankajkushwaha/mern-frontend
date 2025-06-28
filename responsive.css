@@ -33,6 +33,7 @@
     text-align: center;
     align-self: center;
     padding-top: 20px;
+    overflow-y: hidden;
   }
 
   .intro {
@@ -59,7 +60,7 @@
 
   .menu-icon {
     display: block;
-
+  
   }
 
   /* Show nav when checkbox is checked */
@@ -71,11 +72,11 @@
   /* Optional: full width logo centered */
   .mainlogo {
     flex: 1;
+     height: auto;
   }
 
   .herosection {
     flex-direction: column;
-
     flex-wrap: wrap;
     padding: 0;
     justify-content: center;
