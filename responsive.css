@@ -18,9 +18,83 @@
     overflow-x: hidden;
   }
 
+  .navbar {
+    position: relative;
+  }
+
   .nav {
     display: none;
   }
+
+  /* Hide scroll on body when menu is open */
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  /* Basic styles for menu button */
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Dropdown menu hidden by default */
+  .nav-menu-mobile {
+    display: none;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+
+  .getit-mob {
+    border-radius: 8px;
+    height: 40px;
+    border: 2px solid;
+    width: 130px;
+    filter: drop-shadow(0 10 25 0 #1525481A);
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    color: #1565D8;
+    border-color: #1565D8;
+  }
+
+  /* Show menu when active */
+  .dropdown-visible {
+    display: block;
+  }
+
+  /* Hide helper class */
+  .hidden {
+    display: none;
+    color: #3A4C66;
+    background-color: #3A4C66;
+  }
+
+  /* Optional styling for dropdown items */
+  .nav-menu-mobile-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 10px;
+    color: #183B56;
+  }
+
+
+
 
   .headings {
     font-family: "Hanken Grotesk", sans-serif;
@@ -60,7 +134,7 @@
 
   .menu-icon {
     display: block;
-  
+
   }
 
   /* Show nav when checkbox is checked */
@@ -72,7 +146,7 @@
   /* Optional: full width logo centered */
   .mainlogo {
     flex: 1;
-     height: auto;
+    height: auto;
   }
 
   .herosection {
@@ -265,6 +339,12 @@
 
   }
 
+  .scroll-button button:active {
+    background-color: #183b5652;
+    transition: 0.2s ease-in-out;
+    border-radius: 100%;
+  }
+
   .fest-card {
     width: 320px;
     background: white;
@@ -328,6 +408,35 @@
 
   .videos-section {
     padding: 60px 0 60px 20px;
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 36px;
+    width: 60px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 100;
+
+  }
+
+  .text p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    max-width: 100%;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #FFFFFF;
+    z-index: 100;
+    padding-top: 10px;
   }
 
   .youtube,
@@ -427,6 +536,10 @@
     justify-content: center;
     gap: 24px;
     padding-bottom: 40px;
+  }
+
+  .rotate-button-left {
+    transform: rotate(180deg);
   }
 
   .nav-buttons-bottom-tab button {
@@ -531,7 +644,7 @@
     grid-template-rows: repeat(2, auto);
   }
 
-  .social-icons{
+  .social-icons {
     justify-content: center;
   }
 

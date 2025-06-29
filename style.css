@@ -14,11 +14,14 @@ body {
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0 96px;
-  padding-top: 20px;
+  padding: 20px 96px;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  background-color: #ffffff;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  z-index: 100000;
 }
 
 .mainlogo {
@@ -48,6 +51,7 @@ body {
   color: #183B56;
   list-style-type: none;
   align-items: center;
+  cursor: pointer;
 }
 
 .getit {
@@ -62,8 +66,13 @@ body {
   background-color: rgb(255, 255, 255);
   color: #1565D8;
   border-color: #1565D8;
+  cursor: pointer;
 
+}
 
+.getit:hover {
+  background-color: #0b37751d;
+  transition: 0.2s ease-in;
 }
 
 .box {
@@ -84,6 +93,14 @@ body {
   line-height: 68px;
 }
 
+.menu-button {
+  display: none;
+}
+
+.nav-menu-mobile {
+  display: none;
+}
+
 .herosection {
   display: flex;
   flex-direction: row;
@@ -100,6 +117,7 @@ body {
   bottom: 0px;
   justify-content: space-between;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .intro {
@@ -183,7 +201,7 @@ body {
   align-self: center;
   justify-content: space-between;
   gap: 40px;
-
+  cursor: pointer;
 }
 
 .leftarrow {
@@ -209,6 +227,7 @@ body {
   padding: 0 96px;
   padding-top: 40px;
 }
+
 
 .scroll-button {
   display: none;
@@ -281,7 +300,15 @@ body {
   letter-spacing: 0.2px;
   border: none;
   font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
 
+}
+
+
+.buy-btn:hover {
+  background-color: #1566d82c;
+  transition: 0.2s ease-in-out;
 }
 
 .sold-out {
@@ -290,6 +317,8 @@ body {
   background-color: #e954320b;
   border: none;
   padding-top: 12px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .sold-out p {
@@ -299,6 +328,11 @@ body {
   line-height: 24px;
   letter-spacing: 0.2px;
   font-size: 20px;
+}
+
+.sold-out:hover {
+  background-color: #e9543224;
+  transition: 0.2 s ease-in-out;
 }
 
 
@@ -340,6 +374,8 @@ body {
 .video-card {
   position: relative;
   border-radius: 8px;
+  cursor: pointer;
+
 }
 
 .video-card img {
@@ -347,16 +383,59 @@ body {
   height: auto;
   display: block;
 
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #183B56;
+  opacity: 0.4;
+  border-radius: 8px;
+  z-index: 1;
 }
 
 .video-card.wide {
   grid-column: span 2;
 }
-.video-card.wide::-webkit-scrollbar{
+
+.video-card.wide::-webkit-scrollbar {
   display: none;
 }
-.video-card::-webkit-scrollbar{
+
+.video-card::-webkit-scrollbar {
   display: none;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 80px;
+  width: 60px;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 100;
+
+}
+
+.text p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  max-width: 100%;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: #FFFFFF;
+  z-index: 100;
 }
 
 .buttons {
@@ -365,6 +444,7 @@ body {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .youtube,
@@ -384,9 +464,19 @@ body {
   color: #E95432;
 }
 
+.youtube:hover {
+  background-color: #e954324a;
+  transition: 0.3s ease-in-out;
+}
+
 .spotify {
   background-color: #36b37f1a;
   color: #36B37E;
+}
+
+.spotify:hover {
+  background-color: #36b37f53;
+  transition: 0.2s ease-in-out;
 }
 
 .youtube span,
@@ -441,7 +531,22 @@ body {
   height: 56px;
   display: flex;
   gap: 17px;
+  cursor: pointer;
 }
+
+.nav-buttons button {
+  background-color: none;
+  border: none;
+  border-radius: 5000px;
+}
+
+.nav-buttons button:hover {
+  background-color: #183b5648;
+  transition: 0.2s ease-in-out;
+  border-radius: 5000px;
+}
+
+
 
 .nav-buttons-bottom {
   display: none;
@@ -507,6 +612,7 @@ body {
   color: #5A7184;
   padding: 13px 30px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .filter-buttons button.active {
@@ -614,7 +720,7 @@ body {
   font-size: 24px;
   color: white;
   margin-bottom: 10px;
-  
+
 }
 
 
