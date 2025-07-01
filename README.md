@@ -104,7 +104,7 @@ Day 8- Day 10 (Wednesday, 25-06-2025 to Friday, 27-06-2025) [html-css-task]
      => Use max-width instead of fixed width to allow containers to shrink on small screens.
      => Use img with width: 100%  for responsive images.  
 
-Day 11 (Monday, 30-07-2025)
+Day 11 (Monday, 30-06-2025)
 
      => Started javascript basics, learnt about strings and array methods.
      => Comparing 2 js objects either by `==` or `===` always returns false.
@@ -123,4 +123,6 @@ Day 11 (Monday, 30-07-2025)
      => Laernt about array iteraations using foreach(), map(), filter(), flatmap().
 
 References: https://www.w3schools.com/js/js_arrays.asp
-            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
+
+     Day 12 (Tuesday, 01-07-2025) 
