@@ -85,3 +85,42 @@ Day 7 (Tuesday, 24-06-2025)
 
      => Javascript works from left-to-right. Meaning 6+5+"hello" will result into 11hello.
         But, "hello"+6+5 will result into hello65.
+     => Learnt about @media to make a website responsive for different screen sizes.
+     => Started working on project "html-css-task"   
+
+References: https://www.w3schools.com/html/default.asp
+
+Day 8- Day 10 (Wednesday, 25-06-2025 to Friday, 27-06-2025) [html-css-task]
+
+     => Made the project html-css-task with a lot of learnings.
+     => Make container for every section to give properties like margin, padding at once.
+     => Used various css properties like flex, grid, image to make website appealing.
+     => Learnt to write js functions for responsive navbar and scroll buttons.
+     => Learnt to make website responsive for different breakpoints using @media query.
+     => Use semantic tags and meaningful class names for better readibility of code.
+     => Prefer to use px instead of % in css properties values.
+     => Use z-index for layering a section or element.
+     => Overflow control: overfloy-x: hidden/ auto to hide overflow content or make it scrollable.
+     => Use max-width instead of fixed width to allow containers to shrink on small screens.
+     => Use img with width: 100%  for responsive images.  
+
+Day 11 (Monday, 30-07-2025)
+
+     => Started javascript basics, learnt about strings and array methods.
+     => Comparing 2 js objects either by `==` or `===` always returns false.
+     => slice(start, end) is used to extract string  part.  End is not included. If parameter is negative, it starts from end od string.
+     => Strings are immutable, They don't modify original string but its copy.
+     => split() converts string into array.
+     => typeof array is object. Arrays use numbered index while objects use named indexes.
+     => pop() removes last element of array and returns removed item.
+     => push() adds new element to array at end and returns new length of the array.
+     => shift() removes first element and returns the removed element.
+     => unshift() adds element at array start and return ne warray length.
+     => splice(index, items to delete, "new items") is used to add new items to array.
+     => slice(start, end[not inclusive]) is used to slice out a piece of array into new array.
+     => sort() sorts array alphabetically. It returns wrong value when operated on numbers so
+        always use comparator function while using sort().
+     => Laernt about array iteraations using foreach(), map(), filter(), flatmap().
+
+References: https://www.w3schools.com/js/js_arrays.asp
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
