@@ -126,6 +126,7 @@ References: https://www.w3schools.com/js/js_arrays.asp
             https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
 
 Day 12 (Tuesday, 01-07-2025)
+
      => Learnt about JavaScript Objects - used to store multiple values in a single variable using key-value pairs.
      => Syntax: { key: value } - keys are strings (or symbols), values can be of any type including arrays, functions, or even nested objects.
      => Accessing values via dot notation (obj.name) and bracket notation (obj["name"]).
@@ -137,6 +138,7 @@ Day 12 (Tuesday, 01-07-2025)
 References: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
 
 Day 13 (Wednesday, 02-07-2025)
+
      => Started deep-diving into JavaScript Functions.
      => Learnt about different types of functions:
         - Function Declaration - hoisted to top of scope.
@@ -149,6 +151,7 @@ Day 13 (Wednesday, 02-07-2025)
 References:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 
 Day 14 (Thursday, 03-07-2025)
+
      => Studied JavaScript Execution Context - how code is executed line by line.
      => Phases of execution:
         1. Creation Phase - memory allocated to variables and functions.
@@ -161,6 +164,7 @@ Day 14 (Thursday, 03-07-2025)
 References:https://www.freecodecamp.org/newsexecution-context-how-javascript-works-behind-the-scenes/
 
 Day 15 (Friday, 04-07-2025)
+
      => Introduced to Asynchronous JavaScript and why it's needed.
      => Understood that JS is single-threaded but supports async behavior via the event loop and Web APIs.
      => Learnt how setTimeout and setInterval are non-blocking.
@@ -174,6 +178,7 @@ Day 15 (Friday, 04-07-2025)
 References:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
 
 Day 16 (Monday, 07-07-2025)
+
      => Started learning Async/Await, a cleaner way to write asynchronous code.
      => async functions return a promise by default.
      => await pauses the execution of an async function until the promise is settled.
@@ -184,6 +189,7 @@ Day 16 (Monday, 07-07-2025)
 References:https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
 
 Day 17 (Tuesday, 08-07-2025)
+
      => Started with DOM - Document Object Model.
      => The DOM represents the structure of a webpage as a tree of objects.
      => Learnt to select elements using:
@@ -196,6 +202,7 @@ Day 17 (Tuesday, 08-07-2025)
 References:https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
 
 Day 18 (Wednesday, 09-07-2025)
+
      => Learnt about DOM Events and how to handle them.
      => Used addEventListener to attach events like click, mouseover, submit, and input.
      => Understood the event object and its properties: target, type, preventDefault(), etc.
@@ -206,6 +213,7 @@ Day 18 (Wednesday, 09-07-2025)
 References:https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
 Day 19 (Thursday, 10-07-2025)
+
      => Did a full recap and practical application of all JS concepts learned so far.
      => Created an interactive mini-project combining DOM manipulation, events, and async calls.
      => Examples included:
