@@ -125,4 +125,92 @@ Day 11 (Monday, 30-06-2025)
 References: https://www.w3schools.com/js/js_arrays.asp
             https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
 
-     Day 12 (Tuesday, 01-07-2025) 
+Day 12 (Tuesday, 01-07-2025)
+     => Learnt about JavaScript Objects - used to store multiple values in a single variable using key-value pairs.
+     => Syntax: { key: value } - keys are strings (or symbols), values can be of any type including arrays, functions, or even nested objects.
+     => Accessing values via dot notation (obj.name) and bracket notation (obj["name"]).
+     => Updated object properties dynamically, deleted keys using delete obj.key.
+     => Introduced to nested objects and how to traverse or access deep properties.
+     => Learnt how to loop over objects using for...in, and how to extract keys/values using Object.keys(), Object.values(), and Object.entries().
+     => Understood that objects are reference types - assigning them to another variable creates a reference, not a copy.
+
+References: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+
+Day 13 (Wednesday, 02-07-2025)
+     => Started deep-diving into JavaScript Functions.
+     => Learnt about different types of functions:
+        - Function Declaration - hoisted to top of scope.
+        - Function Expression - not hoisted, stored in a variable.
+        - Arrow Functions - concise syntax, lexical this (does not have its own this).
+     => Explored default function parameters, arguments object, and rest parameters (...args).
+     => Implemented functions that return other functions - functional programming basics.
+     => Studied Immediately Invoked Function Expressions (IIFE) for scope isolation.
+
+References:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+
+Day 14 (Thursday, 03-07-2025)
+     => Studied JavaScript Execution Context - how code is executed line by line.
+     => Phases of execution:
+        1. Creation Phase - memory allocated to variables and functions.
+        2. Execution Phase - code is actually run.
+     => Each function call creates a new execution context, which is pushed to the Call Stack.
+     => Learnt about Lexical Scope and how inner functions can access variables of outer functions.
+     => Understood the concept of Closures - functions remember the variables from their scope even after the outer function has finished executing.
+     => Studied Hoisting in more depth: var declarations are hoisted but initialized as undefined; let and const are hoisted to TDZ (Temporal Dead Zone).
+
+References:https://www.freecodecamp.org/newsexecution-context-how-javascript-works-behind-the-scenes/
+
+Day 15 (Friday, 04-07-2025)
+     => Introduced to Asynchronous JavaScript and why it's needed.
+     => Understood that JS is single-threaded but supports async behavior via the event loop and Web APIs.
+     => Learnt how setTimeout and setInterval are non-blocking.
+     => Started working with Promises - objects representing eventual completion/failure of an async operation.
+     => Methods:
+        - then() - handles resolved promise
+        - catch() - handles rejected promise
+        - finally() - runs no matter resolved or rejected
+     => Used Promise.all, Promise.race, and Promise.allSettled for handling multiple promises.
+
+References:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+
+Day 16 (Monday, 07-07-2025)
+     => Started learning Async/Await, a cleaner way to write asynchronous code.
+     => async functions return a promise by default.
+     => await pauses the execution of an async function until the promise is settled.
+     => Explored error handling with try...catch around await statements.
+     => Learnt that await only works inside async functions and simplifies the chaining of multiple async calls.
+     => Converted promise chains into async/await for better readability.
+
+References:https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
+
+Day 17 (Tuesday, 08-07-2025)
+     => Started with DOM - Document Object Model.
+     => The DOM represents the structure of a webpage as a tree of objects.
+     => Learnt to select elements using:
+        - getElementById, getElementsByClassName
+        - querySelector, querySelectorAll
+     => Manipulated content using innerHTML, textContent, and styles using style and classList.
+     => Created new elements with createElement, added with appendChild, removed using removeChild.
+     => Practiced real-world scenarios like dynamic image galleries and list generation.
+
+References:https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+
+Day 18 (Wednesday, 09-07-2025)
+     => Learnt about DOM Events and how to handle them.
+     => Used addEventListener to attach events like click, mouseover, submit, and input.
+     => Understood the event object and its properties: target, type, preventDefault(), etc.
+     => Explored event bubbling and capturing - and how to stop them using stopPropagation().
+     => Implemented form validation, toggling sections, dropdown menus using events.
+     => Discussed debouncing and throttling for optimizing event-heavy code like scroll and input handlers.
+
+References:https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+Day 19 (Thursday, 10-07-2025)
+     => Did a full recap and practical application of all JS concepts learned so far.
+     => Created an interactive mini-project combining DOM manipulation, events, and async calls.
+     => Examples included:
+        - Toggleable dark/light mode
+        - Accordion and tab layout
+        - Fetching data from API and rendering it in real-time
+     => Understood real-world flow of execution from user interaction → event handling → DOM updates.
+     => Observed how JavaScript powers dynamic behavior in modern web applications.
