@@ -1,0 +1,652 @@
+/* Responsive styles */
+@media (max-width: 440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 10px;
+
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  /* Hide scroll on body when menu is open */
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  /* Basic styles for menu button */
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Dropdown menu hidden by default */
+  .nav-menu-mobile {
+    display: none;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+
+  .getit-mob {
+    border-radius: 8px;
+    height: 40px;
+    border: 2px solid;
+    width: 130px;
+    filter: drop-shadow(0 10 25 0 #1525481A);
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    color: #1565D8;
+    border-color: #1565D8;
+  }
+
+  /* Show menu when active */
+  .dropdown-visible {
+    display: block;
+  }
+
+  /* Hide helper class */
+  .hidden {
+    display: none;
+    color: #3A4C66;
+    background-color: #3A4C66;
+  }
+
+  /* Optional styling for dropdown items */
+  .nav-menu-mobile-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 10px;
+    color: #183B56;
+  }
+
+
+
+
+  .headings {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+    line-height: 40px;
+    text-align: center;
+    align-self: center;
+    padding-top: 20px;
+    overflow-y: hidden;
+  }
+
+  .intro {
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #5A7184;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+
+  }
+
+  /* Show nav when checkbox is checked */
+  .menu-toggle:checked~.nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Optional: full width logo centered */
+  .mainlogo {
+    flex: 1;
+    height: auto;
+  }
+
+  .herosection {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .logos {
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imagesection img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .biosection {
+    padding: 40px 20px;
+  }
+
+  .bio {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.22px;
+    font-weight: 400;
+  }
+
+  .line {
+    margin-top: 40px;
+  }
+
+  .concerts {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .concertHeading {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    width: 247px;
+  }
+
+  .schedule {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .card-gridd {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 16px;
+
+    height: 100%;
+    padding: 20px;
+    padding-top: 0;
+    padding-left: 10px;
+  }
+
+  .card-gridd>* {
+    min-width: 400px;
+    flex-shrink: 0;
+  }
+
+  .card-gridd::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fest-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 20px;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-y: hidden;
+    justify-content: center;
+  }
+
+  .fest-card img {
+    max-width: 350px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .date-tag {
+    font-family: "Hanken Grotesk", sans-serif;
+    background: #F9FBFE;
+    padding: 13px 14px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    position: absolute;
+    top: 150px;
+    left: 44%;
+    width: 135px;
+    height: auto;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    color: #183B56;
+
+  }
+
+  .fest-card h2 {
+    padding-top: 10px;
+    margin-right: 40px;
+    color: #183B56;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+  }
+
+  .fest-card p {
+    font-family: "Open-Sans", sans-serif;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #7c8ca1;
+    margin-bottom: 15px;
+  }
+
+  .buy-btn {
+    width: 350px;
+    height: auto;
+    background-color: #F9FBFE;
+    font-weight: 700;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: #1565D8;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    border: none;
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  .sold-out {
+    height: auto;
+    width: 350px;
+
+  }
+
+  .sold-out p {
+    font-weight: 700;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: #E95432;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+    overflow-y: hidden;
+  }
+
+  .scroll-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+
+  }
+
+  .scroll-button button:active {
+    background-color: #183b5652;
+    transition: 0.2s ease-in-out;
+    border-radius: 100%;
+  }
+
+  .fest-card {
+    width: 320px;
+    background: white;
+  }
+
+  .scroll-button button {
+    background: none;
+    border: none;
+  }
+
+  .videos-section h2 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+    color: #183B56;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .videos-section p {
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #7a8aa1;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    overflow-x: hidden;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 0px;
+    margin-right: 5px;
+  }
+
+  .video-card,
+  .video-card.wide {
+
+    width: 100%;
+    height: 180px;
+    overflow-x: hidden;
+    grid-column: span 1;
+    overflow-y: hidden;
+  }
+
+  .video-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill;
+  }
+
+  .videos-section {
+    padding: 60px 0 60px 20px;
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 36px;
+    width: 60px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 100;
+
+  }
+
+  .text p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    max-width: 100%;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #FFFFFF;
+    z-index: 100;
+    padding-top: 10px;
+  }
+
+  .youtube,
+  .spotify {
+    padding: 20px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 260px;
+    height: 56px;
+    overflow-y: hidden;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .nav-buttons-bottom {
+    width: 54px;
+    height: 56px;
+    display: flex;
+    gap: 17px;
+  }
+
+  .merch-section {
+    display: none;
+  }
+
+  .merch-section-tab {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .products-scroll-tab {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 0;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .products-scroll-tab>* {
+    min-width: 320px;
+    flex-shrink: 0;
+  }
+
+  .products-scroll-tab::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-area-tab {
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-area-tab h2 {
+    font-size: 28px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.2 px;
+    color: #183B56;
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+
+  .text-area-tab p {
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5A7184;
+    line-height: 28px;
+    padding: 0px 20px 50px 20px;
+    text-align: center;
+  }
+
+  .products-scroll-tab {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin-left: -25px;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .nav-buttons-bottom-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  .rotate-button-left {
+    transform: rotate(180deg);
+  }
+
+  .nav-buttons-bottom-tab button {
+    background: none;
+    border: none;
+  }
+
+  .social-section h2 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    margin-bottom: 25px;
+    color: #183B56;
+
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: space-around;
+    gap: 15px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin-bottom: 40px;
+
+  }
+
+  .filter-buttons button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .filter-buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    padding: 20px 0 20px 0px;
+    border: 8px;
+    width: 100%;
+  }
+
+
+  .social-section {
+    padding: 0;
+  }
+
+
+
+  .card-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .post-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .card-grid>* {
+    min-width: 275px;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 0px;
+  }
+
+  .footer-brand {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    display: none;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+}
