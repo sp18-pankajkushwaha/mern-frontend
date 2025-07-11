@@ -1,0 +1,95 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.timer{
+    top: 40%;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.tiles{
+display: flex;
+height: 100vh;
+justify-content:space-around;
+align-items:center;
+flex-direction: column;
+}
+
+.start{
+    background: none;
+    background-color: rgba(12, 94, 12, 0.363); 
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+}
+.stop{
+    background: none;
+    background-color: rgba(155, 95, 27, 0.363); 
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+}
+.reset{
+    background: none;
+    background-color: rgba(71, 101, 139, 0.363); 
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+}
+.startBlock button{
+    background: none;
+    background-color: rgba(0, 0, 0, 0.555); 
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+}
+.endBlock button{
+    background: none;
+    background-color: rgba(71, 101, 139, 0.363); 
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+}
+.middleBlock button{
+    background: none;
+    background-color: rgba(195, 28, 28, 0.63); 
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+}
+.dynamic-btn-orange{
+    background: none;
+    background-color: orange; 
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+}
+.dynamic-btn-blue{
+    background: none;
+    background-color: blueviolet; 
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+}
