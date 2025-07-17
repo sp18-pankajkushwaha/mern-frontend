@@ -1,0 +1,369 @@
+/* Responsive styles */
+@media screen and (min-width:481px) and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        z-index: 999;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-left: 60px;
+    }
+
+    /* Show nav when checkbox is checked */
+    .menu-toggle:checked~.nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Optional: full width logo centered */
+    .mainlogo {
+        flex: 1;
+
+    }
+
+    .herosection {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .logos {
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+
+
+    /* Hide scroll on body when menu is open */
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    /* Basic styles for menu button */
+    .menu-button {
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* Dropdown menu hidden by default */
+    .nav-menu-mobile {
+        display: none;
+        position: relative;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+
+    .getit-mob {
+        border-radius: 8px;
+        height: 40px;
+        border: 2px solid;
+        width: 130px;
+        filter: drop-shadow(0 10 25 0 #1525481A);
+        font-family: "Open-Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: rgb(255, 255, 255);
+        color: #1565D8;
+        border-color: #1565D8;
+    }
+
+    /* Show menu when active */
+    .dropdown-visible {
+        display: block;
+    }
+
+    /* Hide helper class */
+    .hidden {
+        display: none;
+        color: #3A4C66;
+        background-color: #3A4C66;
+    }
+
+    /* Optional styling for dropdown items */
+    .nav-menu-mobile-ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        font-family: "Open-Sans", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        padding-top: 10px;
+        color: #183B56;
+    }
+
+
+    .imagesection img {
+        height: 500px;
+        width: 768px;
+    }
+
+    .bio {
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+    }
+
+    .concerts {
+        flex-direction: column;
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .card-gridd {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 16px;
+        padding: 20px 16px;
+    }
+
+    .card-gridd>* {
+        min-width: 320px;
+        flex-shrink: 0;
+    }
+
+    .card-gridd::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scroll-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    .scroll-button button:hover {
+        background-color: #183b5629;
+        transition: 0.2s ease-in-out;
+        border-radius: 100%;
+
+    }
+
+    .scroll-button button:active {
+        background-color: #183b5681;
+    }
+
+
+    .fest-card {
+        width: 320px;
+        background: white;
+        overflow-y: hidden;
+        height: 100%;
+    }
+
+    .scroll-button button {
+        background: none;
+        border: none;
+    }
+
+    .videos-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    .videos-section {
+        padding: 60px 0 60px 20px;
+    }
+
+    .video-card,
+    .video-card.wide {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        width: 320px;
+        height: 360px;
+    }
+
+    .videos-grid>* {
+        flex-shrink: 0;
+    }
+
+    .videos-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .video-card img {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .nav-buttons-bottom {
+        width: 54px;
+        height: 56px;
+        display: flex;
+        gap: 17px;
+    }
+
+    .merch-section {
+        display: none;
+    }
+
+    .merch-section-tab {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .products-scroll-tab {
+        display: flex;
+        flex-direction: row;
+        margin: 10% 0;
+        justify-content: space-between;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    .products-scroll-tab>* {
+        min-width: 320px;
+        flex-shrink: 0;
+    }
+
+    .products-scroll-tab::-webkit-scrollbar {
+        display: none;
+    }
+
+    .text-area-tab {
+        align-self: center;
+        max-width: 100%;
+        height: 142px;
+        padding: 20px;
+    }
+
+    .text-area-tab h2 {
+        font-size: 48px;
+        font-family: "Hanken Grotesk", sans-serif;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0.2 px;
+        color: #183B56;
+        margin-bottom: 10px;
+    }
+
+    .text-area-tab p {
+        font-family: "Open-Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #5A7184;
+        line-height: 32px;
+        padding-bottom: 50px;
+    }
+
+    .nav-buttons-bottom-tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+        padding-bottom: 40px;
+    }
+
+    .rotate-button-left {
+        transform: rotate(180deg);
+    }
+
+    .nav-buttons-bottom-tab button {
+        background: none;
+        border: none;
+    }
+
+    .nav-buttons-bottom-tab button:hover {
+        background-color: #183b5629;
+        transition: 0.2s ease-in-out;
+        border-radius: 100%;
+    }
+
+    .card-grid {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 16px;
+        padding: 20px 0 20px 20px;
+
+    }
+
+    .social-section {
+        padding: 0;
+    }
+
+    .card-grid>* {
+        min-width: 320px;
+        flex-shrink: 0;
+    }
+
+    .card-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .post-card {
+        width: 320px;
+        height: 422px;
+    }
+
+    .footer-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        padding-left: 60px;
+    }
+
+    .footer-brand {
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+
+}
