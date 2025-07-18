@@ -222,3 +222,70 @@ Day 19 (Thursday, 10-07-2025)
         - Fetching data from API and rendering it in real-time
      => Understood real-world flow of execution from user interaction → event handling → DOM updates.
      => Observed how JavaScript powers dynamic behavior in modern web applications.
+
+Day 20 (Friday, 11-07-2025)
+
+     => Completed jstask2 focused on writing modular, reusable JavaScript functions using core concepts (no external libraries).
+     => Handled structured datasets (students, courses, instructors) like relational DBs using JS.
+     => Created core functions:
+     - getCoursesByInstructor(courses, instructorId)
+     - totalCreditsPerStudent(students, courses)
+     - studentTranscript(students, courses, instructors)
+     - courseAverages(students)
+     => Practiced advanced array operations (map, reduce, filter, find) and learned when each is most appropriate.
+     => Focused on edge cases like missing values, malformed input, and empty arrays.
+     => Improved logical thinking by chaining operations and writing clean, functional-style JS.
+     => Understood why input validation and consistent return shapes (objects/arrays) are essential for reliability.
+
+Day 21 (Monday, 14-07-2025)
+
+     => Started React.js with a strong focus on understanding the "why" behind the library.
+     => Understood the component-based architecture and how it simplifies UI organization.
+     => Learned JSX: writing HTML-like syntax inside JS – and how it's transpiled to JS objects.
+     => Built first functional components and rendered them using ReactDOM.render.
+     => Set up local dev environment using Vite for a fast and modern tooling experience.
+     => Understood the difference between component tree (React) vs DOM tree (Browser).
+
+Day 22 (Tuesday, 15-07-2025)
+
+     => Learned props: how to pass data into components to make them dynamic and reusable.
+     => Practiced multiple examples like custom card components, button components, and text headers.
+     => Used prop destructuring for cleaner syntax.
+     => Discussed default props and what happens when props are missing.
+     => Emphasized single source of truth — props driven by parent state, not local manipulation.
+     => Implemented conditional rendering based on props (isActive, isVisible, etc.).
+
+Day 23 (Wednesday, 16-07-2025)
+
+     => Deep-dived into state management using the useState() hook.
+     => Built dynamic components like:
+     - Counter with increment/decrement buttons
+     - Toggle switch for dark/light mode
+     - Real-time input tracking
+     => Explained how React re-renders only the affected component on state change.
+     => Handled multiple state variables and understood that state updates are asynchronous.
+     => Learned the importance of using functional updates when new state depends on previous state.
+
+Day 24 (Thursday, 17-07-2025)
+
+     => Worked on rendering lists with .map() and ensured all elements had unique key props.
+     => Created components that render dynamically from an array of data.
+     => Practiced conditional rendering using ternary (? :) and short-circuit (&&) operators.
+     => Built use-cases like:
+     - Collapsible accordion
+     - Show/hide message on button click
+     => Learned about React fragments (<> </>) to avoid unnecessary wrappers.
+     => Discussed rendering best practices to prevent performance issues in large lists.
+
+Day 25 (Friday, 18-07-2025)
+
+     => Studied "lifting state up" - moving state to common ancestor components.
+     => Passed callback functions (onChange, onSelect) from parent to child for two-way communication.
+     => Created controlled form elements with live validation and shared state.
+     => Discussed React architecture patterns like "smart (container) vs dumb (presentational)" components.
+     => Used useState to manage form input fields (text, checkbox, select).
+     => Wrapped up the week by building a mini React app integrating:
+     - Dynamic component rendering
+     - Props/state usage
+     - Event handling and conditional UI
+     => Understood how React scales complex UIs and separates logic from structure.
